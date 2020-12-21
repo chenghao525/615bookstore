@@ -17,3 +17,4 @@ public class Tester
 		System.out.println(Util.generateRandomString(16));
 	}
 }
+

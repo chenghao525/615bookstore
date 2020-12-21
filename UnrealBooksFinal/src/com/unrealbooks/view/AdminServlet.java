@@ -71,7 +71,7 @@ public class AdminServlet extends BaseServlet
 	    String threshold1=request.getParameter("threshold1");
 	    String sellingp1=request.getParameter("sellingp1");
 	    String buyingp1=request.getParameter("buyingp1");
-
+ 
 	    //restock
 	    String isbn2=request.getParameter("ID2");
 	    String adding=request.getParameter("add");

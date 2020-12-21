@@ -43,10 +43,10 @@ public class LoginServlet extends BaseServlet
 						    response.sendRedirect("/OnlineShoppingNetwork/admin");
 
 						}
-						else if(user.getType() == User.Type.SHIPPING)
-						{
-							response.sendRedirect("/OnlineShoppingNetwork/shipping");
-						}
+//						else if(user.getType() == User.Type.SHIPPING)
+//						{
+//							response.sendRedirect("/OnlineShoppingNetwork/shipping");
+//						}
 						else
 						{
 							response.sendRedirect("/OnlineShoppingNetwork/home");

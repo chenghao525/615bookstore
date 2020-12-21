@@ -72,7 +72,7 @@
     <tbody>
 		<#list bookList as book>
 			<tr>
-				<td><img src=${book.getCover()}></td>
+				<td><img src="https://i.ibb.co/LYRRZyY/bookcover.jpg"></td>
 				<td>${book.getName()}</td>
 				<td>${book.getCompany()}</td>
 				<td>$${book.getPrice()}</td>

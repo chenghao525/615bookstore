@@ -50,7 +50,7 @@ public class ActivateServlet extends BaseServlet
 					map.put("invalidUser", true);
 				}
 			}
-			
+
 			Template template = cfg.getTemplate("activate.ftl");
 			template.process(map, out);
 		}

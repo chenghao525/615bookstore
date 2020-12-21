@@ -49,3 +49,4 @@ public class Promotion {
 		return value;
 	}
 }
+
