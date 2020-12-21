@@ -41,7 +41,7 @@
 	    <div class="col-2"><input class="form-control" name="sel1" id="sel"></div>
 	  </div>
 	  <div class="form-group row">
-	    <label for="ad">Shipping Address:</label>
+	    <label for="ad">Shipping Address*:</label>
 	    <div class="col-2"><input type="text" class="form-control" name="shipping1" id="ad"></div>
 <#--	    <label for="pn">Phone #:</label>-->
 <#--	    <div class="col-2"><input type="number" class="form-control" name="phone1" id="pn"></div>-->
@@ -84,7 +84,7 @@
 	    <div class="col-2"><input type="text" class="form-control" name="email2" id="percc"></div>
 	    <label for="startt1">Password*:</label>
 	    <div class="col-2"><input type="text" class="form-control" name="password2" id="startt1"></div>
-	    <label for="ad">Shipping Address:</label>
+	    <label for="ad">Shipping Address*:</label>
 	    <div class="col-2"><input type="text" class="form-control" name="shipping2" id="ad"></div>
 <#--	    <label for="pn">Phone #:</label>-->
 <#--	    <div class="col-2"><input type="number" class="form-control" name="phone2" id="pn"></div>-->
@@ -138,19 +138,19 @@
 	  <div class="form-group row">
 	    <label for="name">Name:</label>
 	    <div class="col-2"><input type="text" class="form-control" name="bookname" id="name"></div>
-	    <label for="ID">ID: </label>
+	    <label for="ID">ID(>500): </label>
 	    <div class="col-2"><input type="text" class="form-control" name="ID1" id="ID"></div>
 	    <label for="category">Category:</label>
 	    <div class="col-2"><input type="text" class="form-control" name="category1" id="category"></div>
-	    <label for="company">Company:</label>
+	    <label for="company">Author:</label>
 	    <div class="col-2"><input type="text" class="form-control" name="company1" id="company"></div>
 	  </div>
+<#--	  <div class="form-group row">-->
+<#--	    <label for="cover">cover:</label>-->
+<#--	    <div class="col-2"><input type="text" class="form-control" name="cover1" id="cover"></div>-->
+<#--	  </div>-->
 	  <div class="form-group row">
-	    <label for="cover">cover:</label>
-	    <div class="col-2"><input type="text" class="form-control" name="cover1" id="cover"></div>
-	  </div>
-	  <div class="form-group row">
-	    <label for="threshold">Threshold: </label>
+	    <label for="threshold">Threshold(10): </label>
 	    <div class="col-2"><input type="text" class="form-control" name="threshold1" id="threshold"></div>
 	    <label for="sellingp">Selling Price:</label>
 	    <div class="col-1"><input type="text" class="form-control" name="sellingp1" id="sellingp"></div>
@@ -190,15 +190,15 @@
 
 	    <label for="category">Category:</label>
 	    <div class="col-2"><input type="text" class="form-control" name="category2" id="category"></div>
-	    <label for="company">Company:</label>
+	    <label for="company">Author:</label>
 	    <div class="col-2"><input type="text" class="form-control" name="company2" id="company"></div>
 	  </div>
+<#--	  <div class="form-group row">-->
+<#--	    <label for="cover">cover:</label>-->
+<#--	    <div class="col-2"><input type="text" class="form-control" name="cover2" id="cover"></div>-->
+<#--	  </div>-->
 	  <div class="form-group row">
-	    <label for="cover">cover:</label>
-	    <div class="col-2"><input type="text" class="form-control" name="cover2" id="cover"></div>
-	  </div>
-	  <div class="form-group row">
-	    <label for="threshold">Threshold: </label>
+	    <label for="threshold">Threshold(10): </label>
 	    <div class="col-2"><input type="text" class="form-control" name="threshold2" id="threshold"></div>
 	    <label for="sellingp">Selling Price:</label>
 	    <div class="col-1"><input type="text" class="form-control" name="sellingp2" id="sellingp"></div>
@@ -221,75 +221,75 @@
 	</div>
       </span>
 
-      <h3>Employee Management:</h3>
-      <span class="border">
-        <div class="container">
-	  <h4>Create Employee</h4>
-	  <div class="form-group row">
-	    <label for="ffn">Name:</label>
-	    <div class="col-2"><input type="text" class="form-control" name="name4" id="ffn"></div>
-	    <label for="percc">Email:</label>
-	    <div class="col-2"><input type="text" class="form-control" name="email4" id="percc"></div>
-	    <label for="startt">Password:</label>
-	    <div class="col-2"><input type="text" class="form-control" name="password4" id="startt"></div>
-	    <label for="type1">Type:</label>
-	    <div class="col-2"><input type="text" class="form-control" name="type111" id="111"></div>
-	  </div>
-	  <div class="form-group row">
-	    <label for="ad">Shipping Address*:</label>
-	    <div class="col-2"><input type="text" class="form-control" name="shipping4" id="ad"></div>
-	    <label for="pn">Phone Number:</label>
-	    <div class="col-2"><input type="number" class="form-control" name="phone4" id="pn"></div>
-	    <button type="submit" class="btn btn-secondary">Confirm Create</button>
+<#--      <h3>Employee Management:</h3>-->
+<#--      <span class="border">-->
+<#--        <div class="container">-->
+<#--	  <h4>Create Employee</h4>-->
+<#--	  <div class="form-group row">-->
+<#--	    <label for="ffn">Name:</label>-->
+<#--	    <div class="col-2"><input type="text" class="form-control" name="name4" id="ffn"></div>-->
+<#--	    <label for="percc">Email:</label>-->
+<#--	    <div class="col-2"><input type="text" class="form-control" name="email4" id="percc"></div>-->
+<#--	    <label for="startt">Password:</label>-->
+<#--	    <div class="col-2"><input type="text" class="form-control" name="password4" id="startt"></div>-->
+<#--	    <label for="type1">Type:</label>-->
+<#--	    <div class="col-2"><input type="text" class="form-control" name="type111" id="111"></div>-->
+<#--	  </div>-->
+<#--	  <div class="form-group row">-->
+<#--	    <label for="ad">Shipping Address*:</label>-->
+<#--	    <div class="col-2"><input type="text" class="form-control" name="shipping4" id="ad"></div>-->
+<#--	    <label for="pn">Phone Number:</label>-->
+<#--	    <div class="col-2"><input type="number" class="form-control" name="phone4" id="pn"></div>-->
+<#--	    <button type="submit" class="btn btn-secondary">Confirm Create</button>-->
 
-	  </div>
-	</div>
-      </span>
+<#--	  </div>-->
+<#--	</div>-->
+<#--      </span>-->
 
 
-      <span class="border">
-	<div class="container">
-	  <h4>Update Employee</h4>
-	  <!-- Update Employee -->
-	  <div class="form-group row">
-	    <label for="coo1">Id:</label>
-	    <div class="col-2"><input class="form-control" name="employeeid" id="coo1"></div>
+<#--      <span class="border">-->
+<#--	<div class="container">-->
+<#--	  <h4>Update Employee</h4>-->
+<#--	  <!-- Update Employee &ndash;&gt;-->
+<#--	  <div class="form-group row">-->
+<#--	    <label for="coo1">Id:</label>-->
+<#--	    <div class="col-2"><input class="form-control" name="employeeid" id="coo1"></div>-->
 
-	    <label for="fn">Name:</label>
-	    <div class="col-2"><input type="text" class="form-control" name="name5" id="fn"></div>
-	    <label for="perc">Email:</label>
-	    <div class="col-2"><input type="text" class="form-control" name="email5" id="perc"></div>
-	    <label for="start">Password:</label>
-	    <div class="col-2"><input type="text" class="form-control" name="password5" id="start"></div>
-	  </div>
+<#--	    <label for="fn">Name:</label>-->
+<#--	    <div class="col-2"><input type="text" class="form-control" name="name5" id="fn"></div>-->
+<#--	    <label for="perc">Email:</label>-->
+<#--	    <div class="col-2"><input type="text" class="form-control" name="email5" id="perc"></div>-->
+<#--	    <label for="start">Password:</label>-->
+<#--	    <div class="col-2"><input type="text" class="form-control" name="password5" id="start"></div>-->
+<#--	  </div>-->
 
-	  <div class="form-group row">
-	    <label for="add">Shipping Address*:</label>
-	    <div class="col-2">
-              <input type="text" class="form-control" name="shipping5" id="add">
-	    </div>
-	    <label for="phone">Phone Number:</label>
-	    <div class="col-2">
-              <input type="number" class="form-control" name="phone5" id="phone">
-	    </div>
-	    <label for="type222">Type:</label>
-	    <div class="col-2"><input class="form-control" name="type222" id="type222"></div>
-	    <button type="submit" class="btn btn-secondary">Confirm Change</button>
-	  </div>
-	</div>
-      </span>
+<#--	  <div class="form-group row">-->
+<#--	    <label for="add">Shipping Address*:</label>-->
+<#--	    <div class="col-2">-->
+<#--              <input type="text" class="form-control" name="shipping5" id="add">-->
+<#--	    </div>-->
+<#--	    <label for="phone">Phone Number:</label>-->
+<#--	    <div class="col-2">-->
+<#--              <input type="number" class="form-control" name="phone5" id="phone">-->
+<#--	    </div>-->
+<#--	    <label for="type222">Type:</label>-->
+<#--	    <div class="col-2"><input class="form-control" name="type222" id="type222"></div>-->
+<#--	    <button type="submit" class="btn btn-secondary">Confirm Change</button>-->
+<#--	  </div>-->
+<#--	</div>-->
+<#--      </span>-->
 
-      <span class="border">
-	<div class="container">
-	  <h4>Delete Employee</h4>
-	  <p>&nbsp;</p>
-	  <div class="form-group row">
-	    <label for="coo">Employee List:  </label>
-            <div class="col-4"><input class="form-control" name="employeelist" id="coo"></div>
-	    <button type="submit" class="btn btn-secondary">Confirm Delete</button>
-	  </div>
-	</div>
-      </span>
+<#--      <span class="border">-->
+<#--	<div class="container">-->
+<#--	  <h4>Delete Employee</h4>-->
+<#--	  <p>&nbsp;</p>-->
+<#--	  <div class="form-group row">-->
+<#--	    <label for="coo">Employee List:  </label>-->
+<#--            <div class="col-4"><input class="form-control" name="employeelist" id="coo"></div>-->
+<#--	    <button type="submit" class="btn btn-secondary">Confirm Delete</button>-->
+<#--	  </div>-->
+<#--	</div>-->
+<#--      </span>-->
 
 
       <h3>Promotion Management</h3>
