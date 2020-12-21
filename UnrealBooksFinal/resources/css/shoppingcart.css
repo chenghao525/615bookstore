@@ -1,0 +1,24 @@
+
+img
+{
+	height: auto;
+	width: auto;
+	max-height: 150px;
+	max-width: 150px;
+}
+
+h2
+{
+	text-align: center;
+}
+
+button.red
+{
+	background-color: #e50000;
+	color: white;
+}
+
+a button, button
+{
+	cursor: pointer;
+}

@@ -1,0 +1,75 @@
+<!doctype hmtl>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="resources/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="resources/css/base.css"/>
+		<link rel="stylesheet" href="resources/css/home.css"/>
+		<title>Online Shopping Network - Home</title>
+	</head>
+	<body>
+		<script>
+			function tosearch(url)
+			{
+				window.open(url,'_blank');
+			}
+		</script>
+
+		<nav class="navbar navbar-default">
+			<div class="navbar-header">
+				<a href="/OnlineShoppingNetwork">Online Shopping Network</a>
+			</div>
+			<div class="nav navbar-nav navabar-right">
+				<ul>
+					<a href="/OnlineShoppingNetwork/login"><li>Login</li></a>
+					<a href="/OnlineShoppingNetwork/signup"><li>Sign Up</li></a>
+				</ul>
+			</div>
+		</nav>
+		<div id="books">
+			<h2 id="welcome">Find Best Deals of the Best Quality Items.</h2>
+			<form  action="/OnlineShoppingNetwork/search" method="post" class="searchbar">
+				<input name="input" type="text"/>
+				<button class="btn btn-primary">Search</button>
+			</form>
+			<br>
+			<div class="container">
+			<table class="items">
+
+			  <tr>
+			    <td>
+						<div class="smallcontainer">
+						<img src="https://i.ibb.co/vPN9dLt/Kitchen-Image.jpg" alt="Kit">
+	  				<form method="post" action="/OnlineShoppingNetwork/search?input=Kitchen"><button class="btn">Kitchen</button></form>
+						</div>
+			    </td>
+			    <td>
+						<div class="smallcontainer">
+						<img src="https://i.ibb.co/4ZKFn9C/Furniture-Image.jpg" alt="Fur">
+	  				<form method="post" action="/OnlineShoppingNetwork/search?input=Furniture"><button class="btn">Furniture</button></form></div>
+			    </td>
+			  </tr>
+			  <tr>
+					<td>
+						<div class="smallcontainer">
+						<img src="https://i.ibb.co/BKFVtDR/Bath-Image.jpg" alt="Bath">
+	  				<form method="post" action="/OnlineShoppingNetwork/search?input=Bath"><button class="btn">Bath</button></form></div>
+			    </td>
+			    <td>
+						<div class="smallcontainer">
+						<img src="https://i.ibb.co/5WPVFLf/Bedding-Image.jpg" alt="Bed">
+	  				<form method="post" action="/OnlineShoppingNetwork/search?input=Bedding"><button class="btn">Bedding</button></form></div>
+			    </td>
+			  </tr>
+			</table>
+			</div>
+		</div>
+
+		<!--
+		<div class="gray section">
+		</div>
+		<div class="section">
+		</div>
+		-->
+	<body>
+</html>

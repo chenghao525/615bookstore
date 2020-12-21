@@ -1,0 +1,38 @@
+
+h2, h5
+{
+	text-align: center;
+}
+
+h5
+{
+	color: red;
+}
+
+img
+{
+	height: auto;
+	width: auto;
+	max-height: 150px;
+	max-width: 150px;
+}
+
+#promotion
+{
+	text-align: right;
+}
+
+#payment
+{
+	text-align: left;
+}
+
+#payment input
+{
+	width: 30%;
+}
+
+#payment button
+{
+	margin-bottom: 25px;
+}

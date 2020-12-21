@@ -1,0 +1,63 @@
+
+.searchbar
+{
+	margin: auto;
+}
+
+body
+{
+	background-image: url("https://fortunedotcom.files.wordpress.com/2016/11/rossevelt-field-mall-2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+form
+{
+	text-align: center;
+}
+
+#welcome
+{
+	text-align: center;
+	color: white;
+	/*margin-top: 50%;*/
+}
+
+.container {
+		align: center;
+    position: relative;
+    width: 40%;
+    max-width: 400px;
+}
+
+.smallcontainer {
+	align:center;
+	width:100%;
+	max-width: 200px;
+}
+
+.smallcontainer img {
+    width: 100%;
+    height: auto;
+}
+
+.smallcontainer button {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 12px;
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container .btn:hover {
+    background-color: black;
+}

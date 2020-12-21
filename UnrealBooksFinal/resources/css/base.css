@@ -1,0 +1,33 @@
+nav
+{
+	background-color: Green; /*Blue*/
+	color: white;
+}
+
+a:hover
+{
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a, a:visited
+{
+	color: white;
+}
+
+li
+{
+	display: inline;
+	margin-left: 5px;
+}
+
+.section
+{
+	height: 40%;
+	width: 100%;
+}
+
+.gray
+{
+	background-color: #F2F2F2;
+}
