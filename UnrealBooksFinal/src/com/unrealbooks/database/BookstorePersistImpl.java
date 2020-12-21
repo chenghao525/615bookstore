@@ -253,7 +253,7 @@ public class BookstorePersistImpl
 			book.setCover(rs.getString("cover"));
 			book.setInventory_amt(rs.getInt("inventory_amt"));
 			book.setThreshold(rs.getInt("threshold"));
-			book.setPrice(rs.getInt("price"));
+			book.setPrice(rs.getDouble("price"));
 
 			list.add(book);
 		}
@@ -263,7 +263,7 @@ public class BookstorePersistImpl
 		e.printStackTrace();
 	}
 	try{
-		//Search Company
+		//Search Author
 		ps = con.prepareStatement(searchCompany);
 		ps.setString(1, "%" + input + "%");
 		rs = DatabaseAccess.retrieve(ps);
@@ -278,7 +278,7 @@ public class BookstorePersistImpl
 			book.setCover(rs.getString("cover"));
 			book.setInventory_amt(rs.getInt("inventory_amt"));
 			book.setThreshold(rs.getInt("threshold"));
-			book.setPrice(rs.getInt("price"));
+			book.setPrice(rs.getDouble("price"));
 
 			if(!list.contains(book))
 			{
@@ -307,7 +307,7 @@ public class BookstorePersistImpl
 				book.setCover(rs.getString("cover"));
 				book.setInventory_amt(rs.getInt("inventory_amt"));
 				book.setThreshold(rs.getInt("threshold"));
-				book.setPrice(rs.getInt("price"));
+				book.setPrice(rs.getDouble("price"));
 
 				if(!list.contains(book))
 				{
@@ -343,7 +343,7 @@ public class BookstorePersistImpl
 			while(rs.next())
 			{
 				cart.setCustomer_id(rs.getInt("customer_id"));
-				cart.setPrice(rs.getInt("price"));
+				cart.setPrice(rs.getDouble("price"));
 				cart.setCart_id(rs.getInt("cart_id"));
 				return cart;
 			}
@@ -444,7 +444,7 @@ public class BookstorePersistImpl
 			}
 
 			ps = con.prepareStatement(updatePrice);
-			ps.setInt(1, price);
+			ps.setDouble(1, price);
 			ps.setInt(2, cart.getCart_id());
 			DatabaseAccess.update(ps);
 		}
@@ -454,7 +454,7 @@ public class BookstorePersistImpl
 		}
 	}
 
-	public int retrieveItemPrice(String isbn)
+	public double retrieveItemPrice(String isbn)
 	{
 		ResultSet rs;
 		try
@@ -465,7 +465,7 @@ public class BookstorePersistImpl
 
 			while(rs.next())
 			{
-				return rs.getInt("price");
+				return rs.getDouble("price");
 			}
 		}
 		catch(Exception e)
@@ -498,7 +498,7 @@ public class BookstorePersistImpl
 				book.setCover(rs.getString("cover"));
 				book.setInventory_amt(rs.getInt("inventory_amt"));
 				book.setThreshold(rs.getInt("threshold"));
-				book.setPrice(rs.getInt("price"));
+				book.setPrice(rs.getDouble("price"));
 				bookList.add(book);
 
 				qty = new Integer(rs.getInt("qty"));
@@ -633,7 +633,7 @@ public class BookstorePersistImpl
 			ps = con.prepareStatement(createOrder);
 			ps.setInt(1, 0);
 			ps.setDate(2, order.getOrder_date());
-			ps.setInt(3, order.getFinalPrice());
+			ps.setDouble(3, order.getFinalPrice());
 			ps.setInt(4, order.getUserId());
 			ps.setTimestamp(5, order.getTime());
 			rows = DatabaseAccess.update(ps);
@@ -984,9 +984,9 @@ public class BookstorePersistImpl
             ps.setString(3, book.getCompany());
             ps.setString(4, book.getName());
             ps.setString(5, book.getCover());
-            ps.setInt(9, book.getInventory_amt());
-            ps.setInt(10, book.getThreshold());
-            ps.setDouble(11, book.getPrice());
+            ps.setInt(6, book.getInventory_amt());
+            ps.setInt(7, book.getThreshold());
+            ps.setDouble(8, book.getPrice());
             rows=DatabaseAccess.update(ps);
         }
         catch(Exception e)
@@ -1059,7 +1059,7 @@ public class BookstorePersistImpl
 							book.setCover(rs.getString("cover"));
 							book.setInventory_amt(rs.getInt("inventory_amt"));
 							book.setThreshold(rs.getInt("threshold"));
-							book.setPrice(rs.getInt("price"));
+							book.setPrice(rs.getDouble("price"));
               return true;
             }
         }
@@ -1228,7 +1228,7 @@ public class BookstorePersistImpl
 				book.setCover(rs.getString("cover"));
 				book.setInventory_amt(rs.getInt("inventory_amt"));
 				book.setThreshold(rs.getInt("threshold"));
-				book.setPrice(rs.getInt("price"));
+				book.setPrice(rs.getDouble("price"));
 				list.add(book);
 			}
 
@@ -1264,7 +1264,7 @@ public class BookstorePersistImpl
 			while(rs.next())
 			{
 					if(input.equals(rs.getString("isbn"))) {
-					sales+=rs.getInt("qty")*rs.getInt("price");
+					sales+=rs.getInt("qty")*rs.getDouble("price");
 					}
 			}
 
@@ -1293,7 +1293,7 @@ public class BookstorePersistImpl
 			while(rs.next())
 			{
 					if(input.equals(rs.getString("Company"))) {
-					sales+=rs.getInt("qty")*rs.getInt("price");
+					sales+=rs.getInt("qty")*rs.getDouble("price");
 					}
 			}
 

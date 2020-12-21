@@ -37,7 +37,8 @@ public class AdminServlet extends BaseServlet
 	    String sel1=request.getParameter("sel1");
 	    String password1=request.getParameter("password1");
 	    String shipping1=request.getParameter("shipping1");
-	    String phone1=request.getParameter("phone1");
+//	    String phone1=request.getParameter("phone1");
+	    String phone1="-1";
 	    String card1=request.getParameter("card1");
 	    String billing1=request.getParameter("billing1");
 	    String type1=request.getParameter("type1");
@@ -51,7 +52,8 @@ public class AdminServlet extends BaseServlet
 	    String sel2=request.getParameter("sel2");
 	    String password2=request.getParameter("password2");
 	    String shipping2=request.getParameter("shipping2");
-	    String phone2=request.getParameter("phone2");
+//	    String phone2=request.getParameter("phone2");
+	    String phone2="-1";
 	    String card2=request.getParameter("card2");
 	    String billing2=request.getParameter("billing2");
 	    String type2=request.getParameter("type2");
@@ -61,7 +63,7 @@ public class AdminServlet extends BaseServlet
 	    //delete customer
 	    String customerlist=request.getParameter("customerlist");
 	    //add book
-	    String title1=request.getParameter("name1");
+	    String title1=request.getParameter("bookname");
 	    String isbn1=request.getParameter("ID1");
 	    String category1=request.getParameter("category1");
 	    String author1=request.getParameter("company1");

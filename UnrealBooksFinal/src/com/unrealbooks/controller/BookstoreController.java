@@ -132,7 +132,7 @@ public class BookstoreController
 		return persist.retrievePayment(user);
 	}
 
-	public Orders createOrder(User user, int finalPrice)
+	public Orders createOrder(User user, double finalPrice)
 	{
 		Calendar calendar = Calendar.getInstance();
 		java.util.Date now = calendar.getTime();

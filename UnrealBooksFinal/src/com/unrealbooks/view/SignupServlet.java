@@ -21,8 +21,8 @@ public class SignupServlet extends BaseServlet
 		throws ServletException, IOException
 	{
 		//Mail session and properties
-		final String fromEmail = "onlineshoppingnetworkServer@gmail.com";
-		final String fromPassword = "onlineshopping123";
+		final String fromEmail = "615bookstore@gmail.com";
+		final String fromPassword = "Bookstore615$";
 		Properties props = new Properties();
 		props.put("mail.smtp.auth", "true");
 		props.put("mail.smtp.starttls.enable", "true");
@@ -34,7 +34,7 @@ public class SignupServlet extends BaseServlet
 			{
 				protected PasswordAuthentication getPassswordAuthentication()
 				{
-					return new PasswordAuthentication("unrealbookstore", fromPassword);
+					return new PasswordAuthentication("615bookstore", fromPassword);
 				}
 			});
 		try

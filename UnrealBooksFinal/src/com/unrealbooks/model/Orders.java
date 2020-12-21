@@ -7,7 +7,7 @@ public class Orders {
 
 	private int transaction_number;
 	private java.sql.Date order_date;
-	private int finalPrice;
+	private double finalPrice;
 	private int userid;
 	private Timestamp time;
 
@@ -50,12 +50,12 @@ public class Orders {
 		return time;
 	}
 
-	public void setFinalPrice(int finalPrice)
+	public void setFinalPrice(double finalPrice)
 	{
 		this.finalPrice = finalPrice;
 	}
 
-	public int getFinalPrice()
+	public double getFinalPrice()
 	{
 		return finalPrice;
 	}

@@ -6,7 +6,7 @@ public class DatabaseAccess
 {
 	private static Connection con = null;
 	private static String user = "root";
-	private static String pass = "q1w2e3r4";
+	private static String pass = "14131341";
 
 	private static void connect()
 	{

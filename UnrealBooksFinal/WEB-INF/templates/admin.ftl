@@ -31,20 +31,20 @@
 	  <h4>Create Customer</h4>
 	  <form action="/OnlineShoppingNetwork/admin" method="post">
 	  <div class="form-group row">
-	    <label for="ffn">Name:</label>
+	    <label for="ffn">Name*:</label>
 	    <div class="col-2"><input type="text" class="form-control" name="name1" id="ffn"></div>
-	    <label for="percc">Email:</label>
+	    <label for="percc">Email*:</label>
 	    <div class="col-2"><input type="email" class="form-control" name="email1" id="percc"></div>
-	    <label for="startt2">Password:</label>
+	    <label for="startt2">Password*:</label>
 	    <div class="col-2"><input type="text" class="form-control" name="password1" id="startt2"></div>
-	    <label for="sel">Status:</label>
+	    <label for="sel">Status*(active,waiting):</label>
 	    <div class="col-2"><input class="form-control" name="sel1" id="sel"></div>
 	  </div>
 	  <div class="form-group row">
 	    <label for="ad">Shipping Address:</label>
 	    <div class="col-2"><input type="text" class="form-control" name="shipping1" id="ad"></div>
-	    <label for="pn">Phone #:</label>
-	    <div class="col-2"><input type="number" class="form-control" name="phone1" id="pn"></div>
+<#--	    <label for="pn">Phone #:</label>-->
+<#--	    <div class="col-2"><input type="number" class="form-control" name="phone1" id="pn"></div>-->
 	    <label for="cn">Card #:</label>
             <div class="col-2"><input type="text" class="form-control" name="card1" id="cn"></div>
             <label for="ba">Billing Address:</label>
@@ -72,22 +72,22 @@
 	<div class="container">
 	  <h4>Update Customer</h4>
 	  <div class="form-group row">
-	    <label for="idl">ID:</label>
+	    <label for="idl">ID*:</label>
 	    <div class="col-2"><input class="form-control" name="cusid1" id="idl"></div>
-	    <label for="lln">Name: </label>
+	    <label for="lln">Name*: </label>
 	    <div class="col-3"><input type="text" class="form-control" name="name2" id="lln"></div>
-	    <label for="sel2">Status:</label>
+	    <label for="sel2">Status*(active,waiting):</label>
 	    <div class="col-2"><input class="form-control" name="sel2" id="sel2"></div>
 	  </div>
 	  <div class="form-group row">
-	    <label for="percc">Email:</label>
+	    <label for="percc">Email*:</label>
 	    <div class="col-2"><input type="text" class="form-control" name="email2" id="percc"></div>
-	    <label for="startt1">Password:</label>
+	    <label for="startt1">Password*:</label>
 	    <div class="col-2"><input type="text" class="form-control" name="password2" id="startt1"></div>
 	    <label for="ad">Shipping Address:</label>
 	    <div class="col-2"><input type="text" class="form-control" name="shipping2" id="ad"></div>
-	    <label for="pn">Phone #:</label>
-	    <div class="col-2"><input type="number" class="form-control" name="phone2" id="pn"></div>
+<#--	    <label for="pn">Phone #:</label>-->
+<#--	    <div class="col-2"><input type="number" class="form-control" name="phone2" id="pn"></div>-->
 	  </div>
 	  <div class="form-group row">
 	    <label for="cn">Card #:</label>
@@ -121,7 +121,7 @@
 	  <h4>Delete Customer</h4>
 	  <p>&nbsp;</p>
 	  <div class="form-group row">
-	    <label for="coo">Customer List:  </label>
+	    <label for="coo">Customer ID:  </label>
 	    <div class="col-4"><input class="form-control" name="customerlist" id="coo"></div>
 	    <button type="submit" class="btn btn-secondary">Confirm Delete</button>
 	  </div>
@@ -137,7 +137,7 @@
 	  <h4>Add Item</h4>
 	  <div class="form-group row">
 	    <label for="name">Name:</label>
-	    <div class="col-2"><input type="text" class="form-control" name="name1" id="name"></div>
+	    <div class="col-2"><input type="text" class="form-control" name="bookname" id="name"></div>
 	    <label for="ID">ID: </label>
 	    <div class="col-2"><input type="text" class="form-control" name="ID1" id="ID"></div>
 	    <label for="category">Category:</label>
@@ -236,7 +236,7 @@
 	    <div class="col-2"><input type="text" class="form-control" name="type111" id="111"></div>
 	  </div>
 	  <div class="form-group row">
-	    <label for="ad">Shipping Address:</label>
+	    <label for="ad">Shipping Address*:</label>
 	    <div class="col-2"><input type="text" class="form-control" name="shipping4" id="ad"></div>
 	    <label for="pn">Phone Number:</label>
 	    <div class="col-2"><input type="number" class="form-control" name="phone4" id="pn"></div>
@@ -264,7 +264,7 @@
 	  </div>
 
 	  <div class="form-group row">
-	    <label for="add">Shipping Address:</label>
+	    <label for="add">Shipping Address*:</label>
 	    <div class="col-2">
               <input type="text" class="form-control" name="shipping5" id="add">
 	    </div>
@@ -348,161 +348,6 @@
 
       </span>
 
-
-      <h3>Shipping Agency Management</h3>
-
-      <span class="border">
-	<div class="container">
-	  <h4>New Shipping Agency</h4>
-	  <div class="form-group row">
-	    <label for="shipid1">ID:</label>
-	    <div class="col-2"><input type="text" class="form-control" name="shipid1" id="shipid1"></div>
-	    <label for="shipname1">Name:</label>
-	    <div class="col-2"><input type="text" class="form-control" name="shipname1" id="shipname1"></div>
-	    <label for="shipphone1">Phone Number:</label>
-	    <div class="col-2"><input type="text" class="form-control" name="shipphone1" id="shipphone1"></div>
-	    <label for="shipadd1">Address:</label>
-	    <div class="col-2"><input type="text" class="form-control" name="shipadd1" id="shipadd1"></div>
-	  </div>
-	  <h6>Contact Person Information:</h6>
-	  <div class="form-group row">
-	    <label for="cname1">Name:</label>
-            <div class="col-2"><input type="text" class="form-control" name="cname1" id="cname1"></div>
-            <label for="shipem1">Email:</label>
-            <div class="col-2"><input type="text" class="form-control" name="shipem1" id="shipem1"></div>
-            <label for="cphone1">Cellphone:</label>
-            <div class="col-2"><input type="text" class="form-control" name="cphone1" id="cphone1"></div>
-	  </div>
-	  <div class="form-group row">
-	    <label for="bphone1">Business Phone:</label>
-	    <div class="col-2"><input type="text" class="form-control" name="bphone1" id="bphone1"></div>
-	    <button type="submit" class="btn btn-secondary">Submit</button>
-	  </div>
-	</div>
-      </span>
-
-
-
-      <span class="border">
-	<div class="container">
-	  <h4>Update Shipping Agency</h4>
-	  <div class="form-group row">
-            <label for="shipid1">ID:</label>
-            <div class="col-2"><input type="text" class="form-control" name="shipid2" id="shipid1"></div>
-            <label for="shipname1">Name:</label>
-            <div class="col-2"><input type="text" class="form-control" name="shipname2" id="shipname1"></div>
-            <label for="shipphone1">Phone Number:</label>
-            <div class="col-2"><input type="text" class="form-control" name="shipphone2" id="shipphone1"></div>
-            <label for="shipadd1">Address:</label>
-            <div class="col-2"><input type="text" class="form-control" name="shipadd2" id="shipadd1"></div>
-          </div>
-          <h6>Contact Person Information:</h6>
-          <div class="form-group row">
-            <label for="cname1">Name:</label>
-            <div class="col-2"><input type="text" class="form-control" name="cname2" id="cname1"></div>
-            <label for="shipem1">Email:</label>
-            <div class="col-2"><input type="text" class="form-control" name="shipem2" id="shipem1"></div>
-            <label for="cphone1">Cellphone:</label>
-            <div class="col-2"><input type="text" class="form-control" name="cphone2" id="cphone1"></div>
-          </div>
-          <div class="form-group row">
-            <label for="bphone1">Business Phone:</label>
-            <div class="col-2"><input type="text" class="form-control" name="bphone2" id="bphone1"></div>
-            <button type="submit" class="btn btn-secondary">Submit</button>
-          </div>
-
-	</div>
-      </span>
-
-      <span class="border">
-	<div class="container">
-	  <h4>Delete Shipping Agency</h4>
-	  <p>&nbsp;</p>
-	  <div class="form-group row">
-	    <label for="co12">Enter shipping agency ID to delete:</label>
-	    <div class="col-4">
-	      <input class="form-control" name="shiplist" id="co12"></div>
-	    <button type="submit" class="btn btn-secondary">Confirm Delete</button>
-
-	  </div>
-      </div>
-      </span>
-
-
-      <h3>Item Supplier Management</h3>
-
-      <span class="border">
-	<div class="container">
-	  <h4>New Supplier Company</h4>
-	  <div class="form-group row">
-	    <label for="supplyid1">ID:</label>
-	    <div class="col-2"><input type="text" class="form-control" name="supplyid1" id="supplyid1"></div>
-	    <label for="supplyname1">Name:</label>
-	    <div class="col-2"><input type="text" class="form-control" name="supplyname1" id="supplyname1"></div>
-	    <label for="supplyphone1">Phone Number:</label>
-	    <div class="col-2"><input type="text" class="form-control" name="supplyphone1" id="supplyphone1"></div>
-	    <label for="supplyadd1">Address:</label>
-	    <div class="col-2"><input type="text" class="form-control" name="supplyadd1" id="supplyadd1"></div>
-	  </div>
-	  <h6>Contact Person Information:</h6>
-	  <div class="form-group row">
-	    <label for="supplycname1">Name:</label>
-            <div class="col-2"><input type="text" class="form-control" name="supplycname1" id="supplycname1"></div>
-            <label for="supplyem1">Email:</label>
-            <div class="col-2"><input type="text" class="form-control" name="supplyem1" id="supplyem1"></div>
-            <label for="supplycphone1">Cellphone:</label>
-            <div class="col-2"><input type="text" class="form-control" name="supplycphone1" id="supplycphone1"></div>
-	  </div>
-	  <div class="form-group row">
-	    <label for="supplybphone1">Business Phone:</label>
-	    <div class="col-2"><input type="text" class="form-control" name="supplybphone1" id="supplybphone1"></div>
-	    <button type="submit" class="btn btn-secondary">Submit</button>
-	  </div>
-	</div>
-      </span>
-
-
-
-      <span class="border">
-	<div class="container">
-	    <h4>Update Supplier Company</h4>
-	      <div class="form-group row">
-            <label for="supplyid1">ID:</label>
-            <div class="col-2"><input type="text" class="form-control" name="supplyid2" id="supplyid1"></div>
-            <label for="supplyname1">Name:</label>
-            <div class="col-2"><input type="text" class="form-control" name="supplyname2" id="supplyname1"></div>
-            <label for="supplyphone1">Phone Number:</label>
-            <div class="col-2"><input type="text" class="form-control" name="supplyphone2" id="supplyphone1"></div>
-            <label for="supplyadd1">Address:</label>
-            <div class="col-2"><input type="text" class="form-control" name="supplyadd2" id="supplyadd1"></div>
-          </div>
-          <h6>Contact Person Information:</h6>
-          <div class="form-group row">
-            <label for="supplycname1">Name:</label>
-            <div class="col-2"><input type="text" class="form-control" name="supplycname2" id="supplycname1"></div>
-            <label for="supplyem1">Email:</label>
-            <div class="col-2"><input type="text" class="form-control" name="supplyem2" id="supplyem1"></div>
-            <label for="supplycphone1">Cellphone:</label>
-            <div class="col-2"><input type="text" class="form-control" name="supplycphone2" id="supplycphone1"></div>
-          </div>
-          <div class="form-group row">
-            <label for="supplybphone1">Business Phone:</label>
-            <div class="col-2"><input type="text" class="form-control" name="supplybphone2" id="supplybphone1"></div>
-            <button type="submit" class="btn btn-secondary">Submit</button>
-          </div>
-
-	  </div>
-      </span>
-
-      <span class="border">
-	<div class="container">
-	  <h4>Delete Supplier Company</h4>
-	  <p>&nbsp;</p>
-	  <div class="form-group row">
-	    <label for="co12">Enter item supplier company ID to delete:</label>
-	    <div class="col-4">
-	      <input class="form-control" name="supplierlist" id="co12"></div>
-	    <button type="submit" class="btn btn-secondary">Confirm Delete</button>
 
 	  </div>
       </form>

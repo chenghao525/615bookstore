@@ -14,6 +14,10 @@
 <body>
 <#include "Navbar.ftl">
 <div class="container">
+    <form action="/OnlineShoppingNetwork/search" method="post" class="searchbar">
+        <input name="input" type="text"/>
+        <button class="btn btn-primary">Search</button>
+    </form>
   <#if bookList??>
   <h2>Search Results for "${input}"</h2>
   <#if success == true>
@@ -35,7 +39,7 @@
     <tbody>
 		<#list bookList as book>
 			<tr>
-				<td><img src=${book.getCover()}></td>
+				<td><img src="https://i.ibb.co/LYRRZyY/bookcover.jpg"></td>
 				<td>${book.getName()}</td>
 				<td>${book.getCompany()}</td>
 				<td>$${book.getPrice()}</td>

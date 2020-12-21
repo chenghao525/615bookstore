@@ -96,7 +96,7 @@ public class CheckoutServlet extends BaseServlet
 				Promotion promotion = controller.retrievePromotion(promoCode);
 				if(promotion != null)
 				{
-					int finalPrice = (int)cart.getPrice() - promotion.getValue();
+					double finalPrice = (double)cart.getPrice() - promotion.getValue();
 					if(finalPrice < 0)
 					{
 						finalPrice = 0;

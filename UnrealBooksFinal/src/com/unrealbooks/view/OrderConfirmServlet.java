@@ -37,12 +37,12 @@ public class OrderConfirmServlet extends BaseServlet
 			Orders order;
 			if(session.getAttribute("finalPrice") != null)
 			{
-				int finalPrice = (int) session.getAttribute("finalPrice");
+				double finalPrice = (double) session.getAttribute("finalPrice");
 				order = controller.createOrder(user, finalPrice);
 			}
 			else
 			{
-				order = controller.createOrder(user, (int) cart.getPrice());
+				order = controller.createOrder(user, (double) cart.getPrice());
 
 			}
 

@@ -25,31 +25,31 @@
   <div class="container">
   <table class="items">
 
-    <tr>
-      <td>
-        <div class="smallcontainer">
-        <img src="https://i.ibb.co/vPN9dLt/Kitchen-Image.jpg" alt="Kit">
-        <form method="post" action="/OnlineShoppingNetwork/search?input=Kitchen"><button class="btn">Kitchen</button></form>
-        </div>
-      </td>
-      <td>
-        <div class="smallcontainer">
-        <img src="https://i.ibb.co/4ZKFn9C/Furniture-Image.jpg" alt="Fur">
-        <form method="post" action="/OnlineShoppingNetwork/search?input=Furniture"><button class="btn">Furniture</button></form></div>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <div class="smallcontainer">
-        <img src="https://i.ibb.co/BKFVtDR/Bath-Image.jpg" alt="Bath">
-        <form method="post" action="/OnlineShoppingNetwork/search?input=Bath"><button class="btn">Bath</button></form></div>
-      </td>
-      <td>
-        <div class="smallcontainer">
-        <img src="https://i.ibb.co/5WPVFLf/Bedding-Image.jpg" alt="Bed">
-        <form method="post" action="/OnlineShoppingNetwork/search?input=Bedding"><button class="btn">Bedding</button></form></div>
-      </td>
-    </tr>
+      <tr>
+          <td>
+              <div class="smallcontainer">
+                  <img src="https://i.ibb.co/LYRRZyY/bookcover.jpg" alt="Kit">
+                  <form method="post" action="/OnlineShoppingNetwork/search?input=all"><button class="btn">Books</button></form>
+              </div>
+          </td>
+          <td>
+              <div class="smallcontainer">
+                  <img src="https://i.ibb.co/6w3cCYw/coming.jpg" alt="Fur">
+                  <form method="post" action="/OnlineShoppingNetwork/search?input=Furniture"><button class="btn" disabled>Furniture</button></form></div>
+          </td>
+      </tr>
+      <tr>
+          <td>
+              <div class="smallcontainer">
+                  <img src="https://i.ibb.co/6w3cCYw/coming.jpg" alt="Bath">
+                  <form method="post" action="/OnlineShoppingNetwork/search?input=Bath"><button class="btn" disabled>Bath</button></form></div>
+          </td>
+          <td>
+              <div class="smallcontainer">
+                  <img src="https://i.ibb.co/6w3cCYw/coming.jpg" alt="Bed">
+                  <form method="post" action="/OnlineShoppingNetwork/search?input=Bedding"><button class="btn" disabled>Bedding</button></form></div>
+          </td>
+      </tr>
   </table>
   </div>
 </div>
